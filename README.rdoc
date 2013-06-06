@@ -1,0 +1,3 @@
+== Help Desk
+
+An app that allows users to send an email to the helpdesk.
