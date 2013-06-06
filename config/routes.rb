@@ -2,7 +2,7 @@ Helpdesk::Application.routes.draw do
 
   resources :replies
   resources :tickets
-  resources :incoming_mails
+
   root to: "tickets#index"
 
   # The priority is based upon order of creation:
