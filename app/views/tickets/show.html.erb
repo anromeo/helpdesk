@@ -15,6 +15,9 @@
   <%= @ticket.problem %>
 </p>
 
-
 <%= link_to 'Edit', edit_ticket_path(@ticket) %> |
 <%= link_to 'Back', tickets_path %>
+
+<% @ticket.replies do |reply| %>
+  <%= reply.message %>
+<% end %>

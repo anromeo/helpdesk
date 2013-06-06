@@ -1,5 +1,5 @@
 class TicketsMailer < ActionMailer::Base
-  default from: "helpdesk@example.com"
+  default from: "81e384896e6ac4d506f5@cloudmailin.net"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
