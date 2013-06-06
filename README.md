@@ -1,4 +1,4 @@
-![App Screenshot](/app/assets/images/help.png)
+![App Screenshot](/app/assets/images/hel.png)
 
 ## Helpdesk
 
