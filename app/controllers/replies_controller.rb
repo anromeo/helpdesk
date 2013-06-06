@@ -6,14 +6,18 @@ class RepliesController < ApplicationController
   def create
 
     subject = params[:headers][:Subject]
-    id = subject.match(/\d+$/).to_s
+    id = subject.match(/<(\d*)>/)[1]
     reply = params[:plain]
 
     ticket = Ticket.find(id)
 
-    ticket.reply.create(message: reply,
+    ticket.replies.build(message: reply,
       ticket_id: id
       )
-    render :text => 'success', :status => 200 # a status of 404 would reject the mail
+    if ticket.save
+      render :text => 'success', :status => 200 # a status of 404 would reject the mail
+    else
+      render :text => 'failure'
+    end
   end
 end

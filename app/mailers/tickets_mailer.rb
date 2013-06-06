@@ -10,6 +10,6 @@ class TicketsMailer < ActionMailer::Base
     @ticket = ticket
     @email = ticket.email
 
-    mail to: ticket.email, subject: ticket.subject + "Ticket (1)"
+    mail to: ticket.email, subject: ticket.subject + "Ticket <#{ticket.id}>"
   end
 end
