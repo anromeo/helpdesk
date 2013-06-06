@@ -1,3 +1,5 @@
 == Help Desk
 
 An app that allows users to send an email to the helpdesk.
+
+![alt tag](https://raw.github.com/anromeo/helpdesk/blob/master/app/assets/images/help.png)
