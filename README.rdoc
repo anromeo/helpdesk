@@ -1,5 +1,4 @@
+![App Screenshot](/app/assets/images/help.png)
 == Help Desk
 
 An app that allows users to send an email to the helpdesk.
-
-![App Screenshot](/app/assets/images/help.png)
