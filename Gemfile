@@ -6,14 +6,18 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg', group: :production
-gem 'sqlite3' group: :test, :development
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 
+group :test do
+  gem 'sqlite3'
+end
+
 group :development do
   gem "letter_opener"
+  gem 'sqlite3'
 end
 
 group :assets do
