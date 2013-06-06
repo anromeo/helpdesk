@@ -1,4 +1,5 @@
 ![App Screenshot](/app/assets/images/help.png)
-== Help Desk
+
+## Helpdesk
 
 An app that allows users to send an email to the helpdesk.
